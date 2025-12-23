@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 interface Props{
     onSubmit: (idea: string) => void
@@ -5,10 +6,9 @@ interface Props{
 }
 
 
-import React, { useState } from 'react'
 
 const PrompForm = ({onSubmit , loading}: Props) => {
-    const [idea , setIdea] = React.useState("")
+    const [idea , setIdea] = useState("")
 
     function handleSubmit(e: React.FormEvent){
         e.preventDefault()
