@@ -1,15 +1,3 @@
-// export function improvePrompt(idea: string) : string {
-//     if(!idea || !idea.trim()){
-//         throw new Error("Idea is required")
-//     }
-//     return`
-//     ${idea}
-//     This website should:
-//     - Clearly explain its purpose
-//     - Focus on the traget audience
-//     - Highlight key features and value propositions
-//     `
-// }
 
 function detectWebsiteType(idea: string): string {
   const text = idea.toLowerCase();
